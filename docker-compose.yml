@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  app:
+    image: node:14.16.1
+    working_dir: /app
+    volumes:
+      - ./:/app
+    command: "sleep 3600"
